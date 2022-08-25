@@ -1,0 +1,10 @@
+<launch>
+
+	<node name="Leap_data" pkg="human_robot_interaction" type="Leap_server_industrial.py" />
+	<node name="XYZ_robot_coordinates" pkg="human_robot_interaction" type="LeapListener_industrial.py" />
+	<node name="Hand_data" pkg="human_robot_interaction" type="hand_status_industrial.py" />
+	<node name="Hand_life" pkg="human_robot_interaction" type="hand_life_industrial.py" />
+	<node name="palm_direction" pkg="human_robot_interaction" type="palm_direction.py" />
+	<node name="rate_of_change_for_robot" pkg="human_robot_interaction" type="hand_rate_of_change.py" />
+	
+</launch>
